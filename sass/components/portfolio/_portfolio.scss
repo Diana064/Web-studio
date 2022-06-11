@@ -57,12 +57,14 @@
   flex-wrap: wrap;
   gap: var(--mrg);
 }
-.portfolio .portfolio-item {
+.portfolio-item {
   display: flex;
-  --item: 1;
-  flex-basis: calc((100% - var(--mrg) * (var(--items) - 1)) / var(--items));
+  width: 450px;
   @media screen and (min-width: 768px) {
-    --item: 2;
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
   }
 }
 .portfolio-link {
