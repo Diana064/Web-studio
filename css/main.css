@@ -658,17 +658,17 @@ header {
   z-index: 100;
   -webkit-transition: visibility var(--time) var(--time-cubic), opacity var(--time) var(--time-cubic);
   transition: visibility var(--time) var(--time-cubic), opacity var(--time) var(--time-cubic);
+  overflow-y: scroll;
 }
 
 .modal-wrapper {
+  width: 450px;
   padding: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
   color: var(--text-color);
   background-color: var(--white);
   border-radius: 4px;
@@ -680,6 +680,13 @@ header {
           animation-duration: 1000ms;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-wrapper {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal-title {
@@ -954,10 +961,16 @@ header {
 }
 
 .checkbox-text {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--texr-p);
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox-text {
+    font-size: 14px;
+  }
 }
 
 .checkbox-link {
