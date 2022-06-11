@@ -10,13 +10,30 @@ footer {
   }
 }
 .footer {
+  &-text {
+    margin-bottom: 60px;
+  }
   &-block {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 768px) {
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-around;
+      flex-direction: row;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+      justify-content: none;
+    }
   }
   &-links {
-    margin-left: 70px;
+    @media screen and (min-width: 1200px) {
+      margin-left: 70px;
+    }
   }
+
   &-info a {
     display: flex;
     color: var(--footer-text);
@@ -32,6 +49,15 @@ footer {
   }
   &-logo {
     color: var(--white);
+    display: inherit;
+    margin: 0px;
+    text-align: center;
+  }
+  &-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
   }
 }
 .footer-links h3,
@@ -42,7 +68,11 @@ footer {
   line-height: 1.14;
   letter-spacing: 0.03em;
   font-weight: bold;
-  margin-bottom: 30px;
+
+  margin-bottom: 20px;
+  // @media screen and (min-width: 1200px) {
+  //   margin-bottom: 30px;
+  // }
 }
 .links {
   display: flex;
@@ -80,6 +110,10 @@ footer {
 }
 
 address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   margin-top: 20px;
   font-style: normal;
   & a {
@@ -100,12 +134,19 @@ address {
 }
 
 .subscribe {
-  margin-left: 93px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 
+  text-align: center;
   &-form {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+    }
   }
   &-btn {
     display: flex;
@@ -122,6 +163,10 @@ address {
     line-height: 1.88;
     color: var(--white);
     letter-spacing: 0.06em;
+    margin-top: 20px;
+    @media screen and (min-width: 1200px) {
+      margin-top: 0px;
+    }
   }
   &-icon {
     width: 24px;
@@ -137,7 +182,7 @@ address {
     height: 50px;
     width: 358px;
     color: var(--texr-p);
-    &:placeholder {
+    &::placeholder {
       color: rgba(255, 255, 255, 0.6);
     }
   }

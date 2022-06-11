@@ -8,17 +8,33 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   /* outline: 1px solid tomato; */
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 .section {
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   /* outline: 1px solid green; */
 }
 .section:last-child {
-  padding-bottom: 94px;
+  padding-top: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  }
 }
 svg {
   fill: currentColor;
@@ -51,6 +67,9 @@ h3 {
   padding: 0;
   margin: 0;
 }
+a {
+  text-decoration: none;
+}
 p,
 ul {
   list-style: none;
@@ -74,15 +93,12 @@ button {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.active {
-  color: var(--blue);
-  &.nav__item::after {
-    width: 100%;
-  }
-}
 
 .is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+}
+body.modal-open {
+  overflow: hidden;
 }
