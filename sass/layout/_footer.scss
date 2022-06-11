@@ -180,10 +180,16 @@ address {
     background-color: var(--dark-grey);
     border: 1px solid var(--texr-p);
     height: 50px;
-    width: 358px;
+
     color: var(--texr-p);
     &::placeholder {
       color: rgba(255, 255, 255, 0.6);
+    }
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 358px;
     }
   }
 }
