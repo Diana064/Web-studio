@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
     <link
@@ -21,10 +22,39 @@
     <header class="">
       <!--Begin header-->
       <div class="header container">
-        <a href="./index.html" aria-label="Логотип WebStudio" class="logo-web"
+        <a
+          href="./index.html"
+          aria-label="Логотип WebStudio"
+          class="logo-web"
+          id="logo-web"
+          is-hidden
           ><span class="web">Web</span>Studio</a
         >
-        <div class="menu-burger">
+
+        <button
+          class="menu-button"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            class=""
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="icon-menu"
+              href="/images/modal_svg/symbol-defs.svg#icon-menu"
+            ></use>
+            <use
+              class="icon-cross"
+              href="/images/modal_svg/symbol-defs.svg#icon-close-menu"
+            ></use>
+          </svg>
+        </button>
+        <div class="menu-burger" data-menu>
           <ul class="nav">
             <!--Begin nav-list-->
             <li>
@@ -39,7 +69,7 @@
 
           <ul class="kontakt-nav">
             <li>
-              <a href="mailto:info@devstudio.com">
+              <a class="kontakt-mail" href="mailto:info@devstudio.com">
                 <svg class="kontakt-nav__mail" width="16" height="10">
                   <use href="./images/svg/symbol-defs.svg#icon-mail"></use>
                 </svg>
@@ -47,13 +77,20 @@
               >
             </li>
             <li>
-              <a href="tel:+380961111111">
+              <a class="kontakt-tel" href="tel:+380961111111">
                 <svg class="kontakt-nav__tel" width="10" height="16">
                   <use href="./images/svg/symbol-defs.svg#icon-tel"></use>
                 </svg>
                 +38 096 111 11 11
               </a>
             </li>
+          </ul>
+
+          <ul class="menu-burger__link">
+            <li><a href="/">Instagram</a></li>
+            <li><a href="/">Twitter</a></li>
+            <li><a href="/">Facebook</a></li>
+            <li><a href="/">LinkedIn</a></li>
           </ul>
         </div>
       </div>
@@ -71,12 +108,12 @@
             <li><button type="button">Дизайн</button></li>
             <li><button type="button">Маркетинг</button></li>
           </ul>
-          <ul class="portfolio-img">
-            <li class="">
+          <ul class="portfolio-list">
+            <li class="portfolio-item">
               <a href="./" class="portfolio-link">
                 <div class="overlay">
                   <img
-                    width="370"
+                    width=""
                     alt="Технокряк"
                     src="./images/portfolio_page_img/img.jpg"
                   />
@@ -103,11 +140,11 @@
                 <!--End portfolio-text-->
               </a>
             </li>
-            <li>
+            <li class="portfolio-item">
               <a href="./" class="portfolio-link">
                 <div class="overlay">
                   <img
-                    width="370"
+                    width=""
                     alt="Постер"
                     src="./images/portfolio_page_img/img(1).jpg"
                   />
@@ -130,11 +167,11 @@
                 <!--End portfolio-text-->
               </a>
             </li>
-            <li>
+            <li class="portfolio-item">
               <a href="" class="portfolio-link">
                 <div class="overlay">
                   <img
-                    width="370"
+                    width=""
                     alt="Ресторан Seafood"
                     src="./images/portfolio_page_img/img(2).jpg"
                   />
@@ -157,11 +194,11 @@
                 <!--End portfolio-text-->
               </a>
             </li>
-            <li>
+            <li class="portfolio-item">
               <a href="" class="portfolio-link">
                 <div class="overlay">
                   <img
-                    width="370"
+                    width=""
                     alt="Проект Prime"
                     src="./images/portfolio_page_img/img(3).jpg"
                   />
@@ -184,11 +221,11 @@
                 <!--End portfolio-text-->
               </a>
             </li>
-            <li>
+            <li class="portfolio-item">
               <a href="" class="portfolio-link">
                 <div class="overlay">
                   <img
-                    width="370"
+                    width=""
                     alt="Проект Boxes"
                     src="./images/portfolio_page_img/img(4).jpg"
                   />
@@ -211,11 +248,11 @@
                 <!--End portfolio-text-->
               </a>
             </li>
-            <li>
+            <li class="portfolio-item">
               <a href="" class="portfolio-link">
                 <div class="overlay">
                   <img
-                    width="370"
+                    width=""
                     alt="Inspiration has no Borders"
                     src="./images/portfolio_page_img/img(5).jpg"
                   />
@@ -238,11 +275,11 @@
                 <!--End portfolio-text-->
               </a>
             </li>
-            <li>
+            <li class="portfolio-item">
               <a href="" class="portfolio-link">
                 <div class="overlay">
                   <img
-                    width="370"
+                    width=""
                     alt="Веб-сайт"
                     src="./images/portfolio_page_img/img(6).jpg"
                   />
@@ -265,11 +302,11 @@
                 <!--End portfolio-text-->
               </a>
             </li>
-            <li>
+            <li class="portfolio-item">
               <a href="" class="portfolio-link">
                 <div class="overlay">
                   <img
-                    width="370"
+                    width=""
                     alt="Проект LAB"
                     src="./images/portfolio_page_img/img(7).jpg"
                   />
@@ -292,11 +329,11 @@
                 <!--End portfolio-text-->
               </a>
             </li>
-            <li>
+            <li class="portfolio-item">
               <a href="" class="portfolio-link">
                 <div class="overlay">
                   <img
-                    width="370"
+                    width=""
                     alt="Growing Business"
                     src="./images/portfolio_page_img/img(8).jpg"
                   />
@@ -400,5 +437,6 @@
       </div>
       <!--End -->
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

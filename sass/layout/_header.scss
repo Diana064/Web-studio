@@ -45,7 +45,7 @@ header {
   padding: 0;
   border: 0;
   background-color: transparent;
-  z-index: 2;
+  z-index: 5;
   transition: color var(--time) var(--time-cubic);
   @media screen and (min-width: 768px) {
     display: none;
@@ -70,6 +70,7 @@ header {
 .menu-burger {
   @media screen and (max-width: 767px) {
     padding-top: 48px;
+    z-index: 3;
   }
 
   color: var(--text-color);
