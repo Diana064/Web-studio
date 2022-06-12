@@ -1492,9 +1492,15 @@ header {
   margin-right: 0px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 310px) and (max-width: 767px) {
   .portfolio-button li:nth-last-child(1),
   .portfolio-button li:nth-last-child(2) {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .portfolio-button li:nth-last-child(3) {
     margin-top: 15px;
   }
 }
@@ -1513,6 +1519,9 @@ header {
   display: -ms-flexbox;
   display: flex;
   width: 450px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (min-width: 768px) {

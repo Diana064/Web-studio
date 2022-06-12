@@ -46,12 +46,16 @@
   }
   & li:nth-last-child(1),
   & li:nth-last-child(2) {
-    @media screen and (max-width: 767px) {
+    @media screen and (min-width: 310px) and (max-width: 767px) {
+      margin-top: 15px;
+    }
+  }
+  & li:nth-last-child(3) {
+    @media screen and (max-width: 400px) {
       margin-top: 15px;
     }
   }
 }
-
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -60,6 +64,7 @@
 .portfolio-item {
   display: flex;
   width: 450px;
+  justify-content: center;
   @media screen and (min-width: 768px) {
     width: 354px;
   }
