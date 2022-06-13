@@ -125,11 +125,15 @@
   }
   &-text {
     font-family: var(--font-roboto);
-    font-size: 18px;
+    font-size: 14px;
     line-height: 28px;
     color: white;
     letter-spacing: 0.03em;
-    padding: 63px 24px;
+    padding: 28px 24px;
+    @media screen and (min-width: 480px) {
+      font-size: 18px;
+      padding: 63px 24px;
+    }
   }
   & img {
     width: 100%;

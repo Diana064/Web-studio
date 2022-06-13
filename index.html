@@ -28,7 +28,6 @@
           aria-label="Логотип WebStudio"
           class="logo-web"
           id="logo-web"
-          is-hidden
           ><span class="web">Web</span>Studio</a
         >
 
@@ -55,7 +54,7 @@
             ></use>
           </svg>
         </button>
-        <div class="menu-burger" data-menu>
+        <div class="menu-burger" data-menu id="menu-container">
           <ul class="nav">
             <!--Begin nav-list-->
             <li>
@@ -278,13 +277,13 @@
               <picture>
                 <source
                   srcset="
-                    ./images/main_page/work/desktop/1-min.jpg    1x,
-                    ./images/main_page/work/desktop/1@2x-min.jpg 2x
+                    ./images/main_page/work/desktop/1-desk.jpg    1x,
+                    ./images/main_page/work/desktop/1@2x-desk.jpg 2x
                   "
                   media="(min-width: 1200px)"
                 />
                 <img
-                  src="./images/main_page/work/desktop/1-min.jpg"
+                  src="./images/main_page/work/desktop/1-desk.jpg"
                   width="370"
                   alt="Опис занять на фірмі"
                 />
@@ -295,13 +294,13 @@
               <picture>
                 <source
                   srcset="
-                    ./images/main_page/work/desktop/2-min.jpg    1x,
-                    ./images/main_page/work/desktop/2@2x-min.jpg 2x
+                    ./images/main_page/work/desktop/2-desk.jpg    1x,
+                    ./images/main_page/work/desktop/2@2x-desk.jpg 2x
                   "
                   media="(min-width: 1200px)"
                 />
                 <img
-                  src="./images/main_page/work/desktop/2-min.jpg"
+                  src="./images/main_page/work/desktop/2-desk.jpg"
                   width="370"
                   alt="Опис занять на фірмі"
                 />
@@ -312,13 +311,13 @@
               <picture>
                 <source
                   srcset="
-                    ./images/main_page/work/desktop/3-min.jpg    1x,
-                    ./images/main_page/work/desktop/3@2x-min.jpg 2x
+                    ./images/main_page/work/desktop/3-desk.jpg    1x,
+                    ./images/main_page/work/desktop/3@2x-desk.jpg 2x
                   "
                   media="(min-width: 1200px)"
                 />
                 <img
-                  src="./images/main_page/work/desktop/3-min.jpg"
+                  src="./images/main_page/work/desktop/3-desk.jpg"
                   width="370"
                   alt="Опис занять на фірмі"
                 />
@@ -338,27 +337,27 @@
               <picture>
                 <source
                   srcset="
-                    ./images/main_page/team/mobile/1-min.jpg    1x,
-                    ./images/main_page/team/mobile/1@2x-min.png 2x
+                    ./images/main_page/team/mobile/1-mob.jpg    1x,
+                    ./images/main_page/team/mobile/1@2x-mob.png 2x
                   "
                   media="(min-width: 320px)"
                 />
                 <source
                   srcset="
-                    ./images/main_page/team/tablet/1-min.jpg    1x,
-                    ./images/main_page/team/tablet/1@2x-min.jpg 2x
+                    ./images/main_page/team/tablet/1-tab.jpg    1x,
+                    ./images/main_page/team/tablet/1@2x-tab.jpg 2x
                   "
                   media="(min-width: 7680px)"
                 />
                 <source
                   srcset="
-                    ./images/main_page/team/desktop/1-min.jpg    1x,
-                    ./images/main_page/team/desktop/1@2x-min.jpg 2x
+                    ./images/main_page/team/desktop/1-desk.jpg    1x,
+                    ./images/main_page/team/desktop/1@2x-desk.jpg 2x
                   "
                   media="(min-width: 1200px)"
                 />
                 <img
-                  src="./images/main_page/team/desktop/1-min.jpg"
+                  src="./images/main_page/team/desktop/1-desk.jpg"
                   width="270"
                   alt="Перший член команди"
                 />
@@ -413,27 +412,27 @@
               <picture>
                 <source
                   srcset="
-                    ./images/main_page/team/mobile/2-min.jpg    1x,
-                    ./images/main_page/team/mobile/2@2x-min.png 2x
+                    ./images/main_page/team/mobile/2-mob.jpg    1x,
+                    ./images/main_page/team/mobile/2@2x-mob.png 2x
                   "
                   media="(min-width: 320px)"
                 />
                 <source
                   srcset="
-                    ./images/main_page/team/tablet/2-min.jpg    1x,
-                    ./images/main_page/team/tablet/2@2x-min.jpg 2x
+                    ./images/main_page/team/tablet/2-tab.jpg    1x,
+                    ./images/main_page/team/tablet/2@2x-tab.jpg 2x
                   "
                   media="(min-width: 7680px)"
                 />
                 <source
                   srcset="
-                    ./images/main_page/team/desktop/2-min.jpg    1x,
-                    ./images/main_page/team/desktop/2@2x-min.jpg 2x
+                    ./images/main_page/team/desktop/2-desk.jpg    1x,
+                    ./images/main_page/team/desktop/2@2x-desk.jpg 2x
                   "
                   media="(min-width: 1200px)"
                 />
                 <img
-                  src="./images/main_page/team/desktop/2-min.jpg"
+                  src="./images/main_page/team/desktop/2-desk.jpg"
                   width="270"
                   alt="Другий член команди"
                 />
@@ -487,27 +486,27 @@
               <picture>
                 <source
                   srcset="
-                    ./images/main_page/team/mobile/3-min.jpg    1x,
-                    ./images/main_page/team/mobile/3@2x-min.png 2x
+                    ./images/main_page/team/mobile/3-mob.jpg    1x,
+                    ./images/main_page/team/mobile/3@2x-mob.png 2x
                   "
                   media="(min-width: 320px)"
                 />
                 <source
                   srcset="
-                    ./images/main_page/team/tablet/3-min.jpg    1x,
-                    ./images/main_page/team/tablet/3@2x-min.jpg 2x
+                    ./images/main_page/team/tablet/3-tab.jpg    1x,
+                    ./images/main_page/team/tablet/3@2x-tab.jpg 2x
                   "
                   media="(min-width: 7680px)"
                 />
                 <source
                   srcset="
-                    ./images/main_page/team/desktop/3-min.jpg    1x,
-                    ./images/main_page/team/desktop/3@2x-min.jpg 2x
+                    ./images/main_page/team/desktop/3-desk.jpg    1x,
+                    ./images/main_page/team/desktop/3@2x-desk.jpg 2x
                   "
                   media="(min-width: 1200px)"
                 />
                 <img
-                  src="./images/main_page/team/desktop/3-min.jpg"
+                  src="./images/main_page/team/desktop/3-desk.jpg"
                   width="270"
                   alt="Третій член команди"
                 />
@@ -561,27 +560,27 @@
               <picture>
                 <source
                   srcset="
-                    ./images/main_page/team/mobile/4-min.jpg    1x,
-                    ./images/main_page/team/mobile/4@2x-min.png 2x
+                    ./images/main_page/team/mobile/4-mob.jpg    1x,
+                    ./images/main_page/team/mobile/4@2x-mob.png 2x
                   "
                   media="(min-width: 320px)"
                 />
                 <source
                   srcset="
-                    ./images/main_page/team/tablet/4-min.jpg    1x,
-                    ./images/main_page/team/tablet/4@2x-min.jpg 2x
+                    ./images/main_page/team/tablet/4-tab.jpg    1x,
+                    ./images/main_page/team/tablet/4@2x-tab.jpg 2x
                   "
                   media="(min-width: 7680px)"
                 />
                 <source
                   srcset="
-                    ./images/main_page/team/desktop/4-min.jpg    1x,
-                    ./images/main_page/team/desktop/4@2x-min.jpg 2x
+                    ./images/main_page/team/desktop/4-desk.jpg    1x,
+                    ./images/main_page/team/desktop/4@2x-desk.jpg 2x
                   "
                   media="(min-width: 1200px)"
                 />
                 <img
-                  src="./images/main_page/team/desktop/4-min.jpg"
+                  src="./images/main_page/team/desktop/4-desk.jpg"
                   width="270"
                   alt="Четвертий член команди"
                 />

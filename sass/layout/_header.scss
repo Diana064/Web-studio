@@ -97,7 +97,7 @@ header {
   }
 
   @media screen and (max-width: 767px) {
-    position: absolute;
+    position: fixed;
     top: 100%;
     left: 0;
     width: 100%;
@@ -290,6 +290,9 @@ header {
     font-size: 34px;
     line-height: 1.18;
     letter-spacing: 0.02em;
+  }
+  @media screen and (max-width: 479px) {
+    font-size: 26px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-top: 10px;

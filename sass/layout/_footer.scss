@@ -20,12 +20,14 @@ footer {
     @media screen and (min-width: 768px) {
       flex-wrap: wrap;
       align-items: baseline;
-      justify-content: space-around;
+
       flex-direction: row;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      justify-content: space-around;
     }
     @media screen and (min-width: 1200px) {
       flex-wrap: nowrap;
-      justify-content: none;
     }
   }
   &-links {

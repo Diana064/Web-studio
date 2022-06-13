@@ -28,6 +28,14 @@ body {
   letter-spacing: 0.03em;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -289,7 +297,7 @@ header {
 
 @media screen and (max-width: 767px) {
   .menu-burger {
-    position: absolute;
+    position: fixed;
     top: 100%;
     left: 0;
     width: 100%;
@@ -552,6 +560,12 @@ header {
   }
 }
 
+@media screen and (max-width: 479px) {
+  .kontakt-nav .kontakt-tel {
+    font-size: 26px;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .kontakt-nav .kontakt-tel {
     margin-top: 10px;
@@ -602,7 +616,6 @@ header {
 
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/main_page/hero/tablet/hero.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/main_page/hero/tablet/hero.jpg");
   }
@@ -1629,11 +1642,18 @@ header {
 
 .overlay-text {
   font-family: var(--font-roboto);
-  font-size: 18px;
+  font-size: 14px;
   line-height: 28px;
   color: white;
   letter-spacing: 0.03em;
-  padding: 63px 24px;
+  padding: 28px 24px;
+}
+
+@media screen and (min-width: 480px) {
+  .overlay-text {
+    font-size: 18px;
+    padding: 63px 24px;
+  }
 }
 
 .overlay img {
@@ -1678,8 +1698,6 @@ footer a {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1687,13 +1705,17 @@ footer a {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .footer-block {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer-block {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    -webkit-box-pack: none;
-        -ms-flex-pack: none;
-            justify-content: none;
   }
 }
 
