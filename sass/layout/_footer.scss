@@ -16,15 +16,17 @@ footer {
   &-block {
     display: flex;
     flex-direction: column;
-    align-items: center;
     @media screen and (min-width: 768px) {
       flex-wrap: wrap;
       align-items: baseline;
 
       flex-direction: row;
     }
-    @media screen and (min-width: 768px) and (max-width: 1200px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       justify-content: space-around;
+    }
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+      align-items: center;
     }
     @media screen and (min-width: 1200px) {
       flex-wrap: nowrap;
@@ -53,13 +55,17 @@ footer {
     color: var(--white);
     display: inherit;
     margin: 0px;
-    text-align: center;
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+      text-align: center;
+    }
   }
   &-links {
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin-bottom: 60px;
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+      align-items: center;
+    }
   }
 }
 .footer-links h3,
@@ -78,9 +84,10 @@ footer {
 }
 .links {
   display: flex;
-  align-items: center;
   justify-content: center;
-
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    align-items: center;
+  }
   & li {
     margin-right: 10px;
     &:last-child {
@@ -114,10 +121,12 @@ footer {
 address {
   display: flex;
   flex-direction: column;
-  align-items: center;
 
   margin-top: 20px;
   font-style: normal;
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    align-items: center;
+  }
   & a {
     transition: color var(--time) var(--time-cubic);
     &:hover {
