@@ -1613,7 +1613,7 @@ header {
 
 .portfolio-text p {
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.8;
   letter-spacing: 0.03em;
   color: var(--texr-p);
 }
@@ -1642,7 +1642,7 @@ header {
 .overlay-text {
   font-family: var(--font-roboto);
   font-size: 14px;
-  line-height: 28px;
+  line-height: 2;
   color: white;
   letter-spacing: 0.03em;
   padding: 28px 24px;
