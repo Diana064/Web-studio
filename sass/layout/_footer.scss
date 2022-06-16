@@ -12,6 +12,10 @@ footer {
 .footer {
   &-text {
     margin-bottom: 60px;
+    @media screen and (max-width: 479px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   &-block {
     display: flex;
@@ -25,9 +29,7 @@ footer {
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       justify-content: space-around;
     }
-    @media screen and (min-width: 480px) and (max-width: 1199px) {
-      align-items: center;
-    }
+
     @media screen and (min-width: 1200px) {
       flex-wrap: nowrap;
     }
@@ -78,9 +80,12 @@ footer {
   font-weight: bold;
 
   margin-bottom: 20px;
-  // @media screen and (min-width: 1200px) {
-  //   margin-bottom: 30px;
-  // }
+  @media screen and (max-width: 479px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 .links {
   display: flex;
@@ -165,7 +170,7 @@ address {
     justify-content: center;
     width: 200px;
     height: 50px;
-    margin-left: 12px;
+
     background: #2196f3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -177,6 +182,7 @@ address {
     margin-top: 20px;
     @media screen and (min-width: 1200px) {
       margin-top: 0px;
+      margin-left: 12px;
     }
   }
   &-icon {

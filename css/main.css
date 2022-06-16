@@ -1391,6 +1391,7 @@ header {
 }
 
 .clients-list li {
+  margin: auto;
   --items: 2;
   -ms-flex-preferred-size: calc((100% - var(--mrg) * (var(--items) - 1)) / var(--items));
       flex-basis: calc((100% - var(--mrg) * (var(--items) - 1)) / var(--items));
@@ -1647,10 +1648,16 @@ header {
   padding: 28px 24px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .overlay-text {
     font-size: 18px;
     padding: 63px 24px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .overlay-text {
+    font-size: 11px;
   }
 }
 
@@ -1674,6 +1681,13 @@ footer a {
 
 .footer-text {
   margin-bottom: 60px;
+}
+
+@media screen and (max-width: 479px) {
+  .footer-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .footer-block {
@@ -1704,14 +1718,6 @@ footer a {
   .footer-block {
     -ms-flex-pack: distribute;
         justify-content: space-around;
-  }
-}
-
-@media screen and (min-width: 480px) and (max-width: 1199px) {
-  .footer-block {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 
@@ -1786,6 +1792,20 @@ footer a {
   letter-spacing: 0.03em;
   font-weight: bold;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 479px) {
+  .footer-links h3,
+  .subscribe h3 {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-links h3,
+  .subscribe h3 {
+    text-align: left;
+  }
 }
 
 .links {
@@ -1930,7 +1950,6 @@ address p {
           justify-content: center;
   width: 200px;
   height: 50px;
-  margin-left: 12px;
   background: #2196f3;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -1946,6 +1965,7 @@ address p {
 @media screen and (min-width: 1200px) {
   .subscribe-btn {
     margin-top: 0px;
+    margin-left: 12px;
   }
 }
 

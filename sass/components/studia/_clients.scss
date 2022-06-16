@@ -10,6 +10,7 @@
   gap: var(--mrg);
 
   & li {
+    margin: auto;
     --items: 2;
     flex-basis: calc((100% - var(--mrg) * (var(--items) - 1)) / var(--items));
     &:nth-last-child(-n + 2) {
