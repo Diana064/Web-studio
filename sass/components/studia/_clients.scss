@@ -5,66 +5,64 @@
 //   }
 // }
 .clients-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--mrg);
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--mrg);
 
-  & li {
-    margin: auto;
-    --items: 2;
-    flex-basis: calc((100% - var(--mrg) * (var(--items) - 1)) / var(--items));
-    &:nth-last-child(-n + 2) {
-      margin-bottom: 0px;
-    }
-  }
-  & a {
-    text-align: center;
-    display: block;
-    padding: 16px 32px;
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
-    transition: border var(--time) var(--time-cubic);
-    &:hover,
-    &:focus {
-      border: 1px solid var(--blue);
-    }
-    &:hover .clients-icon,
-    &:focus .clients-icon {
-      fill: var(--blue);
-    }
-  }
-  & svg {
-    height: 60px;
-    width: 106px;
-    fill: var(--clients-icon);
-  }
+	& li {
+		margin: auto;
+		--items: 2;
+		flex-basis: calc((100% - var(--mrg) * (var(--items) - 1)) / var(--items));
+		&:nth-last-child(-n + 2) {
+			margin-bottom: 0px;
+		}
+	}
+	& a {
+		text-align: center;
+		display: block;
+		padding: 16px 32px;
+		border: 1px solid #afb1b8;
+		border-radius: 4px;
+		transition: border var(--time) var(--time-cubic);
+		&:hover,
+		&:focus {
+			border: 1px solid var(--blue);
+		}
+		&:hover .clients-icon,
+		&:focus .clients-icon {
+			fill: var(--blue);
+		}
+	}
+	& svg {
+		height: 60px;
+		width: 106px;
+		fill: var(--clients-icon);
+	}
 }
 .clients-icon {
-  transition: fill var(--time) var(--time-cubic);
+	transition: fill var(--time) var(--time-cubic);
 }
 @media screen and (min-width: 768px) {
-  .clients-list li {
-    --items: 3;
-    &:nth-last-child(-n + 3) {
-      margin-bottom: 0px;
-    }
-  }
+	.clients-list li {
+		--items: 3;
+		&:nth-last-child(-n + 3) {
+			margin-bottom: 0px;
+		}
+	}
 }
 @media screen and (min-width: 1200px) {
-  .clients-list {
-    gap: 0;
-    & li {
-      --items: 6;
-      margin-right: 30px;
-      &:last-child {
-        margin-right: 0px;
-      }
-      &:nth-last-child(-n + 3) {
-        margin-bottom: 30px;
-      }
-      & a {
-        width: 170px;
-      }
-    }
-  }
+	.clients-list {
+		gap: 0;
+		& li {
+			--items: 6;
+			margin-right: 30px;
+			&:last-child {
+				margin-right: 0px;
+			}
+
+			& a {
+				width: 170px;
+			}
+		}
+	}
 }
